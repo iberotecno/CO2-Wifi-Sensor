@@ -1,3 +1,9 @@
+/*
+ * Código fuente desarrollado por iberotecno. Año 2020. 
+ * Versión 1.1
+ * 
+ * */
+
 #include <WiFi.h>
 #include "SPIFFS.h"
 #include <ESPAsyncWebServer.h>       //https://github.com/alanswx/ESPAsyncWiFiManager
@@ -46,8 +52,8 @@ extern const TProgmemPalette16 myRedWhiteBluePalette_p PROGMEM;
 
 
 //datos thingspeak
-unsigned long myChannelNumber = 1122174; //update
-const char * myWriteAPIKey = "27F2DUNCV3LVYAY9"; //update
+//unsigned long myChannelNumber = 1122174; //update
+//const char * myWriteAPIKey = "27F2DUNCV3LVYAY9"; //update
 
 void setup() {
 
@@ -231,7 +237,7 @@ void loop() {
 
   // write to the ThingSpeak channel
   //int x = ThingSpeak.writeFields(numero_canal_convertido, api_key);
-  int x = ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);
+  int x = ThingSpeak.writeFields(numero_canal_convertido, api_key);
 
   delay(15000); // Wait 20 seconds to update the channel again
 

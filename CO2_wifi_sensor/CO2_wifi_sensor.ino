@@ -50,11 +50,6 @@ TBlendType    currentBlending;
 extern CRGBPalette16 myRedWhiteBluePalette;
 extern const TProgmemPalette16 myRedWhiteBluePalette_p PROGMEM;
 
-
-//datos thingspeak
-//unsigned long myChannelNumber = 1122174; //update
-//const char * myWriteAPIKey = "27F2DUNCV3LVYAY9"; //update
-
 void setup() {
 
   Serial.begin(115200);

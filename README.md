@@ -5,6 +5,10 @@ This software is capable to detect CO2 in the air (ppm). The data is sended to T
 
 The device haves a LED that changes his color depending on the CO2 level.
 
+More info at: https://iberotecno.com/tienda/kits-de-arduino/35-50-detector-de-co2-y-calidad-del-aire.html
+
+User manual (Spanish): https://iberotecno.com/tienda/documentos/instrucciones_co2.pdf
+
 You will need to install Arduino IDE: https://iberotecno.com/blog-supratecno/47-tutoriales-paso-a-paso/107-como-instalar-y-configurar-el-ide-de-arduino-tutorial
 
 And the requiered dependencies for ESP32 boards: https://iberotecno.com/blog-supratecno/47-tutoriales-paso-a-paso/108-como-instalar-esp32-en-el-ide-de-arduino-tutorial

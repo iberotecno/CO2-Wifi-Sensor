@@ -1,6 +1,6 @@
 /*
  * Código fuente desarrollado por iberotecno. Año 2020. 
- * Versión 1.1
+ * Versión 1.2
  * 
  * */
 
@@ -59,11 +59,19 @@ void setup() {
   currentPalette = RainbowColors_p;
   currentBlending = LINEARBLEND;
 
+//reset pins
+pinMode(26, INPUT);           // set pin to input
+digitalWrite(26, LOW);
+pinMode(27, INPUT);           // set pin to input
+digitalWrite(27, LOW);
+
+
   //FS
   Serial.println("\n Starting");
   //
-  //***clean FS, for testing
-  //SPIFFS.format();
+  //***clean FS, for testing if pin 26 high on boot
+  if (digitalRead(26) == HIGH){
+  SPIFFS.format();}
 
   //read configuration from FS json
   Serial.println("mounting FS...");
@@ -125,12 +133,14 @@ void setup() {
   //WiFiManager
   AsyncWiFiManagerParameter custom_text("<p>Seleccione la red WiFi para conectarse.</p>");
   wifiManager.addParameter(&custom_text);
-  //reset saved settings
-  //  wifiManager.resetSettings();
-  //  WiFi.disconnect(true);   // still not erasing the ssid/pw. Will happily reconnect on next start
-  //  WiFi.begin("0","0");       // adding this effectively seems to erase the previous stored SSID/PW
-  //  ESP.restart();
-  //  delay(1000);
+  //reset saved settings if pin 27 high on boot
+  if (digitalRead(27) == HIGH){
+    wifiManager.resetSettings();
+    WiFi.disconnect(true);   // still not erasing the ssid/pw. Will happily reconnect on next start
+    WiFi.begin("0","0");       // adding this effectively seems to erase the previous stored SSID/PW
+    ESP.restart();
+    delay(1000);
+  }
   //set custom ip for portal
   //wifiManager.setAPConfig(IPAddress(10,0,1,1), IPAddress(10,0,1,1), IPAddress(255,255,255,0));
   //fetches ssid and pass from eeprom and tries to connect

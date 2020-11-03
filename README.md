@@ -9,4 +9,8 @@ You will need to install Arduino IDE: https://iberotecno.com/blog-supratecno/47-
 
 And the requiered dependencies for ESP32 boards: https://iberotecno.com/blog-supratecno/47-tutoriales-paso-a-paso/108-como-instalar-esp32-en-el-ide-de-arduino-tutorial
 
+You have the possibility of reset wifi settings with pin 27 set to HIGH at reboot. 
+
+You have the possibility to format SPIFFS to original state with no data stored with the pin 26 set to HIGH at reboot.
+
 Thanks and enjoy!!

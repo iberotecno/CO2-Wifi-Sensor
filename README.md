@@ -1,9 +1,9 @@
 CO2 Air Quality Sensor
 =======
 
-This software is capable to detect CO2 in the air (ppm). The data is sended to ThingSpeak server and is possible to view graphics and historic data. Also you can add a widgwet to your smartphone and configure alerts based on the CO2 level. 
+This software is capable to detect CO2 in the air (ppm). The data is sended via wifi to ThingSpeak server and is possible to view graphics and historic data. Also you can add a widgwet to your smartphone and configure alerts based on the CO2 level. 
 
-The device haves a LED that changes his color depending on the CO2 level.
+The device haves a LED that changes his color depending on the CO2 level. The configuration is very easy. The device starts in AP mode and shows an easy to use UI and control panel.
 
 More info at: https://iberotecno.com/tienda/kits-de-arduino/35-50-detector-de-co2-y-calidad-del-aire.html
 

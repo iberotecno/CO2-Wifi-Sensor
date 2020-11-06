@@ -1,7 +1,7 @@
 /*
- * Código fuente desarrollado por iberotecno. Año 2020. 
- * Versión 1.2
- * 
+   Código fuente desarrollado por iberotecno. Año 2020.
+   Versión 1.4
+
  * */
 
 #include <WiFi.h>
@@ -59,20 +59,28 @@ void setup() {
   currentPalette = RainbowColors_p;
   currentBlending = LINEARBLEND;
 
-//reset pins
-pinMode(26, INPUT);           // set pin to input
-digitalWrite(26, LOW);
-pinMode(27, INPUT);           // set pin to input
-digitalWrite(27, LOW);
+  //reset pins
+  pinMode(26, INPUT);           // set pin to input
+  digitalWrite(26, LOW);
+  pinMode(27, INPUT);           // set pin to input
+  digitalWrite(27, LOW);
 
 
   //FS
   Serial.println("\n Starting");
   //
   //***clean FS, for testing if pin 26 high on boot
-  if (digitalRead(26) == HIGH){
-  SPIFFS.format();}
-
+  if (digitalRead(26) == HIGH) {
+    if (SPIFFS.format()) {
+      Serial.println("SPIFFS Formatted ok. Starting.");
+      delay(1000);
+    }
+    else {
+      Serial.println("SPIFFS Format error. Restarting.");
+      ESP.restart();
+      delay(1000);
+    }
+  }
   //read configuration from FS json
   Serial.println("mounting FS...");
   if (SPIFFS.begin()) {
@@ -110,7 +118,7 @@ digitalWrite(27, LOW);
   AsyncWiFiManagerParameter custom_limite_bueno("limite_bueno", "Valor aire bueno", limite_bueno, 100);
   AsyncWiFiManagerParameter custom_limite_malo("limite_malo", "Valor aire malo", limite_malo, 100);
   AsyncWiFiManagerParameter custom_brillo_led("brillo_led", "Brillo del LED", brillo_led, 100);
-  AsyncWiFiManagerParameter custom_api_key("api_key", "API Key", api_key, 100);
+  AsyncWiFiManagerParameter custom_api_key("api_key", "Write API Key", api_key, 100);
   AsyncWiFiManagerParameter custom_numero_canal("numero_canal", "Channel ID", numero_canal, 100);
 
   //WiFiManager
@@ -134,10 +142,12 @@ digitalWrite(27, LOW);
   AsyncWiFiManagerParameter custom_text("<p>Seleccione la red WiFi para conectarse.</p>");
   wifiManager.addParameter(&custom_text);
   //reset saved settings if pin 27 high on boot
-  if (digitalRead(27) == HIGH){
+  if (digitalRead(27) == HIGH) {
     wifiManager.resetSettings();
     WiFi.disconnect(true);   // still not erasing the ssid/pw. Will happily reconnect on next start
-    WiFi.begin("0","0");       // adding this effectively seems to erase the previous stored SSID/PW
+    WiFi.begin("0", "0");      // adding this effectively seems to erase the previous stored SSID/PW
+    Serial.println("Wifi credentials reset. Restarting.");
+    delay(1000);
     ESP.restart();
     delay(1000);
   }

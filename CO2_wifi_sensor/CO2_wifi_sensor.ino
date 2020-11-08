@@ -29,6 +29,7 @@ char limite_bueno[100];
 char brillo_led[100];
 char api_key[100];
 char numero_canal[100];
+char offset_calibracion[100];
 
 //flag for saving data
 bool shouldSaveConfig = false;
@@ -105,6 +106,7 @@ void setup() {
           strcpy(brillo_led, json["brillo_led"]);
           strcpy(api_key, json["api_key"]);
           strcpy(numero_canal, json["numero_canal"]);
+          strcpy(offset_calibracion, json["offset_calibracion"]);
         } else {
           Serial.println("failed to load json config");
         }
@@ -120,6 +122,7 @@ void setup() {
   AsyncWiFiManagerParameter custom_brillo_led("brillo_led", "Brillo del LED", brillo_led, 100);
   AsyncWiFiManagerParameter custom_api_key("api_key", "Write API Key", api_key, 100);
   AsyncWiFiManagerParameter custom_numero_canal("numero_canal", "Channel ID", numero_canal, 100);
+  AsyncWiFiManagerParameter custom_offset_calibracion("offset_calibracion", "Offset", offset_calibracion, 100);
 
   //WiFiManager
   //Local intialization. Once its business is done, there is no need to keep it around
@@ -133,6 +136,7 @@ void setup() {
   wifiManager.addParameter(&custom_brillo_led);
   wifiManager.addParameter(&custom_api_key);
   wifiManager.addParameter(&custom_numero_canal);
+  wifiManager.addParameter(&custom_offset_calibracion);
 
   //scheduled reset
   int horas = 1; // hours for scheduled reset
@@ -170,6 +174,7 @@ void setup() {
   strcpy(brillo_led, custom_brillo_led.getValue());
   strcpy(api_key, custom_api_key.getValue());
   strcpy(numero_canal, custom_numero_canal.getValue());
+  strcpy(offset_calibracion, custom_offset_calibracion.getValue());
 
   //save the custom parameters to FS
   if (shouldSaveConfig) {
@@ -181,6 +186,7 @@ void setup() {
     json["brillo_led"] = brillo_led;
     json["api_key"] = api_key;
     json["numero_canal"] = numero_canal;
+    json["offset_calibracion"] = offset_calibracion;
 
 
     File configFile = SPIFFS.open("/config.json", "w");
@@ -205,13 +211,20 @@ void loop() {
   int brillo_led_convertido = atoi(brillo_led);
   int limite_malo_convertido = atoi(limite_malo);
   int limite_bueno_convertido = atoi(limite_bueno);
+  int offset_calibracion_convertido = atoi(offset_calibracion);
 
   unsigned long numero_canal_convertido = strtoul(numero_canal, NULL, 10);
 
   FastLED.setBrightness(brillo_led_convertido);
 
-  int t = analogRead(A0);  // Read sensor value and stores in a variable t
-  Serial.print("Airquality = ");
+int medicion = analogRead(A0);  // Read sensor value and stores in a variable medicion
+  int t = medicion + offset_calibracion_convertido;
+
+  Serial.print("Medicion raw = ");
+  Serial.println(medicion);
+  Serial.print("Offset = ");
+  Serial.println(offset_calibracion_convertido);
+  Serial.print("Co2 ppm = ");
   Serial.println(t);
 
   if (t <= limite_bueno_convertido)

@@ -212,13 +212,14 @@ void loop() {
   int limite_malo_convertido = atoi(limite_malo);
   int limite_bueno_convertido = atoi(limite_bueno);
   int offset_calibracion_convertido = atoi(offset_calibracion);
+  int offstet_mq_135 = 600;
 
   unsigned long numero_canal_convertido = strtoul(numero_canal, NULL, 10);
 
   FastLED.setBrightness(brillo_led_convertido);
 
 int medicion = analogRead(A0);  // Read sensor value and stores in a variable medicion
-  int t = medicion + offset_calibracion_convertido;
+  int t = medicion + offstet_mq_135 + offset_calibracion_convertido;
 
   Serial.print("Medicion raw = ");
   Serial.println(medicion);

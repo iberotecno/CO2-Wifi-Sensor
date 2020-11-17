@@ -4,12 +4,12 @@
 
  * */
 
-//Download and copy the libraries to Arduino libraries folder (documents > arduino > libraries). Use the provided URLS.
+//Download and copy the libraries to Arduino libraries folder (documents > arduino > libraries) and restart IDE. Use the provided URLS.
 #include <WiFi.h>
 #include "SPIFFS.h"
 #include <ESPAsyncWebServer.h>       //https://github.com/me-no-dev/ESPAsyncWebServer and download this library too: https://github.com/me-no-dev/AsyncTCP
 #include <ESPAsyncWiFiManager.h>     //https://github.com/alanswx/ESPAsyncWiFiManager
-#include <ArduinoJson.h>             //https://github.com/bblanchon/ArduinoJson
+#include <ArduinoJson.h>             //https://github.com/bblanchon/ArduinoJson/tree/5.x
 #include <SimpleTimer.h>             //https://github.com/jfturcot/SimpleTimer
 #include <FastLED.h>                 //https://github.com/FastLED/FastLED
 #include "ThingSpeak.h"              //https://github.com/mathworks/thingspeak-arduino/

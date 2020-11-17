@@ -4,6 +4,7 @@
 
  * */
 
+//Download and copy the libraries to Arduino libraries folder (documents > arduino > libraries). Use the provided URLS.
 #include <WiFi.h>
 #include "SPIFFS.h"
 #include <ESPAsyncWebServer.h>       //https://github.com/alanswx/ESPAsyncWiFiManager

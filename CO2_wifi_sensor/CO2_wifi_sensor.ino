@@ -213,7 +213,7 @@ void loop() {
   int limite_malo_convertido = atoi(limite_malo);
   int limite_bueno_convertido = atoi(limite_bueno);
   int offset_calibracion_convertido = atoi(offset_calibracion);
-  int offstet_mq_135 = 600;
+  int offstet_mq_135 = 400;
 
   unsigned long numero_canal_convertido = strtoul(numero_canal, NULL, 10);
 

@@ -1,5 +1,5 @@
 /*
-   Código fuente desarrollado por iberotecno. Año 2020.
+   Código fuente desarrollado por iberotecno. Copyright Año 2020.
    Versión 1.6
 
  * */

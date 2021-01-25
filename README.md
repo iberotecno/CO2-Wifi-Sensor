@@ -3,10 +3,11 @@
 <p align="center">
   <a href="https://iberotecno.com/">
     <img src="https://iberotecno.com/images/logo_hz.png" alt="Logo" width="277" height="46">
-  </a>
+  </a></p>
+  
 
   <h3 align="center">Detector de CO2 conectado a Internet</h3>
-
+<p align="center">Hecho con ❤️ :smile: por iberotecno</p>
   <p align="center">
     Puedes obtener todas las piezas necesarias para hacer el montaje y una placa con el firmware ya grabado en:
     <br />

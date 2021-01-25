@@ -82,8 +82,8 @@ Si adquieres ek kit de montaje en iberotecno tienda no necesitarás más que con
 
 Si realizas el montaje por ti mismo, necesitarás realizar estos pasos previos:
 
-<a href="https://iberotecno.com/blog-supratecno/47-tutoriales-paso-a-paso/107-como-instalar-y-configurar-el-ide-de-arduino-tutorial">Instalar el IDE de Arduino</a><br />
-<a href="https://iberotecno.com/blog-supratecno/47-tutoriales-paso-a-paso/108-como-instalar-esp32-en-el-ide-de-arduino-tutorial">Instalar las dependencias para ESP32</a><br />
+* <a href="https://iberotecno.com/blog-supratecno/47-tutoriales-paso-a-paso/107-como-instalar-y-configurar-el-ide-de-arduino-tutorial">Instalar el IDE de Arduino</a><br />
+* <a href="https://iberotecno.com/blog-supratecno/47-tutoriales-paso-a-paso/108-como-instalar-esp32-en-el-ide-de-arduino-tutorial">Instalar las dependencias para ESP32</a><br />
 
 Una véz hecho, descarga el firmware que necesites desde esta página y grábalo en tu placa. Recuerda que debes descargar previamente las librerías necesarias, que se indican en el código fuente.
 
@@ -112,13 +112,10 @@ This software is capable to detect CO2 in the air (ppm). The data is sended via 
 
 The device haves a LED that changes his color depending on the CO2 level. The configuration is very easy. The device starts in AP mode and shows an easy to use UI and control panel.
 
-More info at: https://iberotecno.com/tienda/kits-de-arduino/35-50-detector-de-co2-y-calidad-del-aire.html
-
-User manual (Spanish): https://iberotecno.com/tienda/documentos/instrucciones_co2.pdf
-
-You will need to install Arduino IDE: https://iberotecno.com/blog-supratecno/47-tutoriales-paso-a-paso/107-como-instalar-y-configurar-el-ide-de-arduino-tutorial
-
-And the requiered dependencies for ESP32 boards: https://iberotecno.com/blog-supratecno/47-tutoriales-paso-a-paso/108-como-instalar-esp32-en-el-ide-de-arduino-tutorial
+* More info at: https://iberotecno.com/tienda/kits-de-arduino/35-50-detector-de-co2-y-calidad-del-aire.html
+* User manual (Spanish): https://iberotecno.com/tienda/documentos/instrucciones_co2.pdf
+* You will need to install Arduino IDE: https://iberotecno.com/blog-supratecno/47-tutoriales-paso-a-paso/107-como-instalar-y-configurar-el-ide-de-arduino-tutorial
+* And the requiered dependencies for ESP32 boards: https://iberotecno.com/blog-supratecno/47-tutoriales-paso-a-paso/108-como-instalar-esp32-en-el-ide-de-arduino-tutorial
 
 You have the possibility of reset wifi settings with pin 27 set to HIGH at reboot. 
 

@@ -39,6 +39,8 @@ Este software está pensado para poder aprender y experimentar con la medición 
 * Poder usar un relé que active un aparato como una alarma, una sirena o un ventilador que funcione a AC 220V.
 * Poder usar una pantalla OLED para mostrar la información.
 
+Es un proyecto muy bueno para enseñar Arduino en escuelas empresas o institutos. La mejor forma de aprender es experimentar por uno mismo.
+
 ## Sensor electroquímico
 
 El sensor MQ-135 es capáz de detectar diversos tipos de gases. En su interior, dispone de un sensor que reaccione variando su resistividad según la cantidad de moléculas de gases presentes en el ambiente. A diferencia de los sensores NDIR, de mucho más coste, este sensor puede sufrir variaciones en sus mediciones según la humedad y la temperatura en el ambiente. Sin embargo, el sensor viene equipado con un calefactor interno dentro de su módulo. De esta forma, se logran mediciones muy precisas, lineales y estables en comparación en el uso del sensor sin el calefactor.

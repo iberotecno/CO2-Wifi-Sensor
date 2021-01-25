@@ -47,6 +47,8 @@ El sensor MQ-135 es capáz de detectar diversos tipos de gases. En su interior, 
 
 El sensor es capáz de detectar diferentes tipos de gases, por ello a su medición en bruto se le aplica automáticamente un offset. Dicho offset ha sido obtenido comparando las mediciones del sensor con un medidor de CO2 profesional. Si usted lo desea, puede hacer su propia calibración y modificar el parámetro del offset de forma sencilla a través del panel de configuración Wifi.
 
+<img src="https://iberotecno.com/tienda/img/cms/co2/facil.jpg" alt="image" width="550" height="330" >
+
 ## Posibilidad de compra en iberotecno tienda
 
 Si no quieres fallar, te lo ponemos fácil, entra en <a href="https://iberotecno.com/tienda/">tienda.iberotecno.com</a>

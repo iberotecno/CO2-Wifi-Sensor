@@ -39,6 +39,14 @@ Este software está pensado para poder aprender y experimentar con la medición 
 * Poder usar un relé que active un aparato como una alarma, una sirena o un ventilador que funcione a AC 220V.
 * Poder usar una pantalla OLED para mostrar la información.
 
+## Sensor electroquímico
+
+El sensor MQ-135 es capáz de detectar diversos tipos de gases. En su interior, dispone de un sensor que reaccione variando su resistividad según la cantidad de moléculas de gases presentes en el ambiente. A diferencia de los sensores NDIR, de mucho más coste, este sensor puede sufrir variaciones en sus mediciones según la humedad y la temperatura en el ambiente. Sin embargo, el sensor viene equipado con un calefactor interno dentro de su módulo. De esta forma, se logran mediciones muy precisas, lineales y estables en comparación en el uso del sensor sin el calefactor.
+
+## Calibración
+
+El sensor es capáz de detectar diferentes tipos de gases, por ello a su medición en bruto se le aplica automáticamente un offset. Dicho offset ha sido obtenido comparando las mediciones del sensor con un medidor de CO2 profesional. Si usted lo desea, puede hacer su propia calibración y modificar el parámetro del offset de forma sencilla a través del panel de configuración Wifi.
+
 ## Posibilidad de compra en iberotecno tienda
 
 Si no quieres fallar, te lo ponemos fácil, entra en <a href="https://iberotecno.com/tienda/">tienda.iberotecno.com</a>

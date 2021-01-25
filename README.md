@@ -85,20 +85,22 @@ Si realizas el montaje por ti mismo, necesitarás realizar estos pasos previos:
 
 Una véz hecho, descarga el firmware que necesites desde esta página y grábalo en tu placa. Recuerda que debes descargar previamente las librerías necesarias, que se indican en el código fuente.
 
+<img src="https://iberotecno.com/tienda/img/cms/co2/pantalla/COMPRENSION.jpg" alt="image" width="530" height="330" >
 
 ## Proceso de montaje y conexiones
 
-Versión LED: <a href="https://www.youtube.com/watch?v=x2a2iRNfipQ">Vídeo</a><br />
-Versión Relé: <a href="https://www.youtube.com/watch?v=o4NenwlGSC4">Vídeo</a><br />
-Versión pantalla OLED: <a href="https://www.youtube.com/watch?v=EoOteV0yaKs">Vídeo</a>
+* Versión LED: <a href="https://www.youtube.com/watch?v=x2a2iRNfipQ">Vídeo</a><br />
+* Versión Relé: <a href="https://www.youtube.com/watch?v=o4NenwlGSC4">Vídeo</a><br />
+* Versión pantalla OLED: <a href="https://www.youtube.com/watch?v=EoOteV0yaKs">Vídeo</a>
 
 <img src="https://i.imgur.com/IL1LEyf.png" alt="image" width="300" height="300" >
 
+
 ## Manuales de instrucciones
 
-Versión LED: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_led.pdf">Manual en pdf</a><br />
-Versión Relé: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_led.pdf">Manual en pdf</a><br />
-Versión pantalla OLED: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_pantalla.pdf">Manual en pdf</a>
+* Versión LED: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_led.pdf">Manual en pdf</a><br />
+* Versión Relé: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_led.pdf">Manual en pdf</a><br />
+* Versión pantalla OLED: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_pantalla.pdf">Manual en pdf</a>
 
 <img src="https://iberotecno.com/tienda/img/cms/co2/colores.jpg" alt="image" width="530" height="330" >
 

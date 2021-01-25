@@ -1,5 +1,87 @@
-CO2 Air Quality Sensor
-=======
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://iberotecno.com/">
+    <img src="https://iberotecno.com/images/logo_hz.png" alt="Logo" width="277" height="46">
+  </a>
+
+  <h3 align="center">Detector de CO2 conectado a Internet</h3>
+
+  <p align="center">
+    Puedes obtener todas las piezas necesarias para hacer el montaje y una placa con el firmware ya grabado en:
+    <br />
+    <a href="https://iberotecno.com/tienda/"><strong>Tienda iberotecno »</strong></a>
+    <br />
+    <br />
+  Tienes todas estas versiones disponibles:
+    <br />
+    <a href="https://iberotecno.com/tienda/kits-de-arduino/35-55-detector-de-co2-y-calidad-del-aire.html">Con LED RGB</a>
+    ·
+    <a href="https://iberotecno.com/tienda/kits-de-arduino/35-54-detector-de-co2-y-calidad-del-aire.html#/34-rele-con_rele">Con LED RGB y Relé</a>
+    ·
+    <a href="https://iberotecno.com/tienda/kits-de-arduino/45-detector-de-co2-y-calidad-del-aire-con-pantalla-kit-de-aprendizaje.html">Con pantalla OLED</a>
+  </p>
+</p>
+
+
+## Introducción
+
+Este software está pensado para poder aprender y experimentar con la medición de CO2 en el aire (en partes por millón) utilizando la placa ESP32 compatible con el ecosistema Arduino y con capacidad de conectarse a Internet por wifi. El software cuenta con las siguientes funciones destacadas:
+
+* Panel de configuración sencillo, conectandose via Wifi al dispositivo en modo punto de acceso AP.
+* Enviar las lecturas al servidor gratuito ThingSpeak via Wifi. Descargar los datos. Insertarlos en una web.
+* Poder establecer un offset personalizado para calibrar el sensor.
+* Poder usar un programa para móvil que conecte con tu ThingSpeak con el que poder recibir alertas si se supera cierto nivel de CO2.
+* Poder usar un LED que cambie de color según la calidad del aire.
+* Poder usar un relé que active un aparato como una alarma, una sirena o un ventilador que funcione a AC 220V.
+* Poder usar una pantalla OLED para mostrar la información.
+
+## Posibilidad de compra en iberotecno tienda
+
+Si no quieres fallar, te lo ponemos fácil, entra en <a href="https://iberotecno.com/tienda/">tienda.iberotecno.com</a>
+
+* No tendrás problemas de compatibilidad a la hora de elegir los componentes.
+* Envío rápido desde España en 24 horas.
+* Soporte por chat, email o teléfono.
+* Garantía de 2 años y 14 días de devolución.
+* Vídeo explicativo del código fuente para aprender uno mismo o enseñar a los alumnos.
+
+## Lista de materiales
+
+1x Caja estanca IP67<br />
+1x Sensor de gases MQ-135<br />
+1x LED RGB WS2812B<br />
+1x Pantalla OLED (opcional)<br />
+1x Relé 5V 250V 10A (opcional)<br />
+1x Placa de control basada en ESP32 con tecnología Wifi, Bluetooth y salida a +5V<br />
+1x Cable USB<br />
+1x Transformador USB 5V 1A<br />
+1x Cables dupont macho y hembra para la conexión<br />
+
+## Requisitos de software
+
+Si adquieres ek kit de montaje en iberotecno tienda no necesitarás más que conectarte por Wifi a la placa y acceder a su sencillo y cómodo panel de control. 
+
+Si realizas el montaje por ti mismo, necesitarás realizar estos pasos previos:
+
+<a href="https://iberotecno.com/blog-supratecno/47-tutoriales-paso-a-paso/107-como-instalar-y-configurar-el-ide-de-arduino-tutorial">Instalar el IDE de Arduino</a><br />
+<a href="https://iberotecno.com/blog-supratecno/47-tutoriales-paso-a-paso/108-como-instalar-esp32-en-el-ide-de-arduino-tutorial">Instalar las dependencias para ESP32</a><br />
+
+Una véz hecho, descarga el firmware que necesites desde esta página y grábalo en tu placa. Recuerda que debes descargar previamente las librerías necesarias, que se indican en el código fuente.
+
+## Proceso de montaje y conexiones
+
+Versión LED: <a href="https://www.youtube.com/watch?v=x2a2iRNfipQ">Vídeo</a><br />
+Versión Relé: <a href="https://www.youtube.com/watch?v=o4NenwlGSC4">Vídeo</a><br />
+Versión pantalla OLED: <a href="https://www.youtube.com/watch?v=EoOteV0yaKs">Vídeo</a>
+
+## Manuales de instrucciones
+
+Versión LED: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_led.pdf">Manual en pdf</a><br />
+Versión Relé: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_led.pdf">Manual en pdf</a><br />
+Versión pantalla OLED: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_pantalla.pdf">Manual en pdf</a>
+
+## English
 
 This software is capable to detect CO2 in the air (ppm). The data is sended via wifi to ThingSpeak server and is possible to view graphics and historic data. Also you can add a widgwet to your smartphone and configure alerts based on the CO2 level. 
 

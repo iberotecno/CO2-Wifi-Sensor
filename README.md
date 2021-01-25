@@ -27,6 +27,8 @@
 
 ## Introducción
 
+<img src="https://i.imgur.com/HEfpYgu.png" alt="image" width="430" height="330" >
+
 Este software está pensado para poder aprender y experimentar con la medición de CO2 en el aire (en partes por millón) utilizando la placa ESP32 compatible con el ecosistema Arduino y con capacidad de conectarse a Internet por wifi. El software cuenta con las siguientes funciones destacadas:
 
 * Panel de configuración sencillo, conectandose via Wifi al dispositivo en modo punto de acceso AP.
@@ -47,6 +49,9 @@ Si no quieres fallar, te lo ponemos fácil, entra en <a href="https://iberotecno
 * Garantía de 2 años y 14 días de devolución.
 * Vídeo explicativo del código fuente para aprender uno mismo o enseñar a los alumnos.
 
+<img src="https://i.imgur.com/lloOV3z.png" alt="image" width="600" height="330" >
+
+
 ## Lista de materiales
 
 1x Caja estanca IP67<br />
@@ -59,6 +64,8 @@ Si no quieres fallar, te lo ponemos fácil, entra en <a href="https://iberotecno
 1x Transformador USB 5V 1A<br />
 1x Cables dupont macho y hembra para la conexión<br />
 
+<img src="https://i.imgur.com/kbFXw4D.png" alt="image" width="430" height="330" >
+
 ## Requisitos de software
 
 Si adquieres ek kit de montaje en iberotecno tienda no necesitarás más que conectarte por Wifi a la placa y acceder a su sencillo y cómodo panel de control. 
@@ -70,17 +77,22 @@ Si realizas el montaje por ti mismo, necesitarás realizar estos pasos previos:
 
 Una véz hecho, descarga el firmware que necesites desde esta página y grábalo en tu placa. Recuerda que debes descargar previamente las librerías necesarias, que se indican en el código fuente.
 
+
 ## Proceso de montaje y conexiones
 
 Versión LED: <a href="https://www.youtube.com/watch?v=x2a2iRNfipQ">Vídeo</a><br />
 Versión Relé: <a href="https://www.youtube.com/watch?v=o4NenwlGSC4">Vídeo</a><br />
 Versión pantalla OLED: <a href="https://www.youtube.com/watch?v=EoOteV0yaKs">Vídeo</a>
 
+<img src="https://i.imgur.com/IL1LEyf.png" alt="image" width="300" height="300" >
+
 ## Manuales de instrucciones
 
 Versión LED: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_led.pdf">Manual en pdf</a><br />
 Versión Relé: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_led.pdf">Manual en pdf</a><br />
 Versión pantalla OLED: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_pantalla.pdf">Manual en pdf</a>
+
+<img src="https://iberotecno.com/tienda/img/cms/co2/colores.jpg" alt="image" width="530" height="330" >
 
 ## English
 

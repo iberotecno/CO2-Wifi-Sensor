@@ -6,7 +6,7 @@
   </a></p>
   
 
-  <h3 align="center">Detector de CO2 conectado a Internet</h3>
+  <h1 align="center">Detector de CO2 conectado a Internet</h1>
 <p align="center">Hecho con ❤️ :smile: por iberotecno</p>
   <p align="center">
     Puedes obtener todas las piezas necesarias para hacer el montaje y una placa con el firmware ya grabado en:

@@ -18,9 +18,9 @@
     <br />
     <a href="https://iberotecno.com/tienda/kits-de-arduino/35-55-detector-de-co2-y-calidad-del-aire.html">Con LED RGB</a>
     ·
-    <a href="https://iberotecno.com/tienda/kits-de-arduino/35-54-detector-de-co2-y-calidad-del-aire.html#/34-rele-con_rele">Con LED RGB y Relé</a>
+    <a href="https://iberotecno.com/tienda/kits-de-arduino/35-54-detector-de-co2-y-calidad-del-aire.html#/34-opciones_de_compra-con_rele">Con LED RGB y Relé</a>
     ·
-    <a href="https://iberotecno.com/tienda/kits-de-arduino/45-detector-de-co2-y-calidad-del-aire-con-pantalla-kit-de-aprendizaje.html">Con pantalla OLED</a>
+    <a href="https://iberotecno.com/tienda/kits-de-arduino/35-56-detector-de-co2-y-calidad-del-aire.html#/36-opciones_de_compra-con_pantalla">Con pantalla OLED</a>
   </p>
 </p>
 

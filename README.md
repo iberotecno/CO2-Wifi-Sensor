@@ -11,16 +11,8 @@
   <p align="center">
     Puedes obtener todas las piezas necesarias para hacer el montaje y una placa con el firmware ya grabado en:
     <br />
-    <a href="https://iberotecno.com/tienda/"><strong>Tienda iberotecno »</strong></a>
+    <a href="https://iberotecno.com/tienda/kits-de-arduino/35-detector-de-co2-y-calidad-del-aire.html"><strong>Tienda iberotecno »</strong></a>
     <br />
-    <br />
-  Tienes todas estas versiones disponibles:
-    <br />
-    <a href="https://iberotecno.com/tienda/kits-de-arduino/35-55-detector-de-co2-y-calidad-del-aire.html">Con LED RGB</a>
-    ·
-    <a href="https://iberotecno.com/tienda/kits-de-arduino/35-54-detector-de-co2-y-calidad-del-aire.html#/34-opciones_de_compra-con_rele">Con LED RGB y Relé</a>
-    ·
-    <a href="https://iberotecno.com/tienda/kits-de-arduino/35-56-detector-de-co2-y-calidad-del-aire.html#/36-opciones_de_compra-con_pantalla">Con pantalla OLED</a>
   </p>
 </p>
 
@@ -100,10 +92,8 @@ Una véz hecho, descarga el firmware que necesites desde esta página y grábalo
 <img src="https://i.imgur.com/IL1LEyf.png" alt="image" width="300" height="300" >
 
 
-## Manuales de instrucciones
+## Manual de instrucciones
 
-* Versión LED: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_led.pdf">Manual en pdf</a><br />
-* Versión Relé: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_led.pdf">Manual en pdf</a><br />
 * Versión pantalla OLED: <a href="https://iberotecno.com/tienda/documentos/instrucciones_co2_pantalla.pdf">Manual en pdf</a>
 
 <img src="https://iberotecno.com/tienda/img/cms/co2/colores.jpg" alt="image" width="530" height="330" >

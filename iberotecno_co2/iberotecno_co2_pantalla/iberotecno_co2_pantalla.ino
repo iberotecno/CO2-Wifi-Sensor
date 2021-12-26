@@ -40,8 +40,8 @@ SOFTWARE.
 #include <FS.h>                      //library to access the filesystem
 #include <SPI.h>
 #include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
+#include <Adafruit_GFX.h>            //https://github.com/adafruit/Adafruit-GFX-Library
+#include <Adafruit_SSD1306.h>        //https://github.com/adafruit/Adafruit_SSD1306
 //If using an earlier version of the Arduino IDE (prior to 1.8.10), also locate and install Adafruit_BusIO (newer versions will install this dependency automatically).
 
 #define SCREEN_WIDTH 128 // OLED display width, in pixels

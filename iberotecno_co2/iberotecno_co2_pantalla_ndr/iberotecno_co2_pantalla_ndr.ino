@@ -82,9 +82,9 @@ unsigned long getDataTimer = 0;
 
 void setup() {
 
-  Serial.begin(115200);
-  Serial1.begin(9600, SERIAL_8N1, 9, 10);
-  myMHZ19.begin(Serial1);                                // *Serial(Stream) refence must be passed to library begin().
+  Serial.begin(115200);                           
+  Serial2.begin(9600, SERIAL_8N1, 16, 17); // Rx -> G17, Tx ->G16
+  myMHZ19.begin(Serial2);  
 
   //oled
   Wire.begin(23, 19);
